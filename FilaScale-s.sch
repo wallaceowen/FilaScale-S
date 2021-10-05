@@ -1,0 +1,324 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L weo:HX711MOD J1
+U 1 1 62B57971
+P 6975 2150
+F 0 "J1" H 7203 1971 50  0000 L CNN
+F 1 "HX711MOD" H 7203 1880 50  0000 L CNN
+F 2 "HX711MOD_F" H 7203 1834 50  0001 L CNN
+F 3 "" H 7125 2100 50  0001 C CNN
+	1    6975 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 62B59D07
+P 6925 5075
+F 0 "J4" H 7005 5067 50  0000 L CNN
+F 1 "RFID" H 7005 4976 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6925 5075 50  0001 C CNN
+F 3 "~" H 6925 5075 50  0001 C CNN
+	1    6925 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6575 4975 6725 4975
+Wire Wire Line
+	6375 5075 6725 5075
+Wire Wire Line
+	6375 5175 6725 5175
+Wire Wire Line
+	6575 5275 6725 5275
+Text Label 6575 4975 0    50   ~ 0
++5
+Text Label 6425 5175 0    50   ~ 0
+RFID_RXI
+Text Label 6425 5075 0    50   ~ 0
+RFID_TXO
+Wire Wire Line
+	6575 4825 6575 4975
+Text Label 6600 5275 0    50   ~ 0
+GND
+Wire Wire Line
+	6575 5375 6575 5275
+$Comp
+L power:GND #PWR010
+U 1 1 62B6123C
+P 6575 5375
+F 0 "#PWR010" H 6575 5125 50  0001 C CNN
+F 1 "GND" H 6580 5202 50  0000 C CNN
+F 2 "" H 6575 5375 50  0001 C CNN
+F 3 "" H 6575 5375 50  0001 C CNN
+	1    6575 5375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 62B618BC
+P 6575 4825
+F 0 "#PWR09" H 6575 4675 50  0001 C CNN
+F 1 "+5V" H 6590 4998 50  0000 C CNN
+F 2 "" H 6575 4825 50  0001 C CNN
+F 3 "" H 6575 4825 50  0001 C CNN
+	1    6575 4825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3300 6700 3425
+Wire Wire Line
+	6700 3425 6800 3425
+Wire Wire Line
+	6800 3525 6725 3525
+Wire Wire Line
+	6725 3525 6725 4025
+Wire Wire Line
+	6800 3625 6300 3625
+Wire Wire Line
+	5750 3725 5925 3725
+$Comp
+L power:+5V #PWR06
+U 1 1 62B64419
+P 6700 3300
+F 0 "#PWR06" H 6700 3150 50  0001 C CNN
+F 1 "+5V" H 6715 3473 50  0000 C CNN
+F 2 "" H 6700 3300 50  0001 C CNN
+F 3 "" H 6700 3300 50  0001 C CNN
+	1    6700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 62B64C0F
+P 6725 4025
+F 0 "#PWR07" H 6725 3775 50  0001 C CNN
+F 1 "GND" H 6730 3852 50  0000 C CNN
+F 2 "" H 6725 4025 50  0001 C CNN
+F 3 "" H 6725 4025 50  0001 C CNN
+	1    6725 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 62B6536C
+P 7000 3525
+F 0 "J3" H 7080 3517 50  0000 L CNN
+F 1 "BME-280" H 7080 3426 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7000 3525 50  0001 C CNN
+F 3 "~" H 7000 3525 50  0001 C CNN
+	1    7000 3525
+	1    0    0    -1  
+$EndComp
+Text Label 6575 3625 0    50   ~ 0
+SCL
+Text Label 6575 3725 0    50   ~ 0
+SDA
+Wire Wire Line
+	6325 2350 6775 2350
+Wire Wire Line
+	3175 2775 3650 2775
+$Comp
+L MCU_Module:Arduino_Nano_v3.x J2
+U 1 1 62B75E1B
+P 2675 3175
+F 0 "J2" H 2300 4125 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 2225 2225 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 2675 3175 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 2675 3175 50  0001 C CNN
+	1    2675 3175
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3175 2975 3650 2975
+Wire Wire Line
+	3175 3075 3650 3075
+Wire Wire Line
+	2175 3675 1700 3675
+Wire Wire Line
+	2175 3575 1700 3575
+Text Label 1850 3675 0    50   ~ 0
+SCL
+Text Label 1850 3575 0    50   ~ 0
+SDA
+$Comp
+L power:+5V #PWR03
+U 1 1 62B85D1B
+P 2475 2000
+F 0 "#PWR03" H 2475 1850 50  0001 C CNN
+F 1 "+5V" H 2490 2173 50  0000 C CNN
+F 2 "" H 2475 2000 50  0001 C CNN
+F 3 "" H 2475 2000 50  0001 C CNN
+	1    2475 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 62B865E9
+P 2575 4500
+F 0 "#PWR08" H 2575 4250 50  0001 C CNN
+F 1 "GND" H 2580 4327 50  0000 C CNN
+F 2 "" H 2575 4500 50  0001 C CNN
+F 3 "" H 2575 4500 50  0001 C CNN
+	1    2575 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2675 4175 2675 4250
+Wire Wire Line
+	2675 4250 2575 4250
+Connection ~ 2575 4250
+Wire Wire Line
+	2575 4250 2575 4175
+Text Label 3300 3075 0    50   ~ 0
+PD_SCK
+Text Label 6350 2350 0    50   ~ 0
+PD_SCK
+Text Label 6350 2450 0    50   ~ 0
+PD_DOUT
+Wire Wire Line
+	6650 2125 6650 2250
+Wire Wire Line
+	6650 2250 6775 2250
+Wire Wire Line
+	6650 2650 6650 2550
+Wire Wire Line
+	6650 2550 6775 2550
+$Comp
+L power:+5V #PWR04
+U 1 1 62B99D51
+P 6650 2125
+F 0 "#PWR04" H 6650 1975 50  0001 C CNN
+F 1 "+5V" H 6665 2298 50  0000 C CNN
+F 2 "" H 6650 2125 50  0001 C CNN
+F 3 "" H 6650 2125 50  0001 C CNN
+	1    6650 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 62B9A177
+P 6650 2650
+F 0 "#PWR05" H 6650 2400 50  0001 C CNN
+F 1 "GND" H 6655 2477 50  0000 C CNN
+F 2 "" H 6650 2650 50  0001 C CNN
+F 3 "" H 6650 2650 50  0001 C CNN
+	1    6650 2650
+	1    0    0    -1  
+$EndComp
+Text Label 3275 2775 0    50   ~ 0
+RFID_RXI
+NoConn ~ 2575 2175
+NoConn ~ 2775 2175
+NoConn ~ 2175 2675
+NoConn ~ 2175 2975
+NoConn ~ 2175 3175
+NoConn ~ 2175 3275
+NoConn ~ 2175 3375
+NoConn ~ 2175 3475
+NoConn ~ 2175 3775
+NoConn ~ 2175 3875
+Text Label 3300 2975 0    50   ~ 0
+PD_DOUT
+NoConn ~ 3175 3575
+NoConn ~ 3175 3475
+NoConn ~ 3175 3375
+NoConn ~ 3175 3275
+NoConn ~ 3175 3175
+NoConn ~ 3175 2675
+NoConn ~ 3175 2575
+$Comp
+L Device:R R2
+U 1 1 62BB0725
+P 5925 3275
+F 0 "R2" H 5775 3325 50  0000 L CNN
+F 1 "3.9K" H 5700 3200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5855 3275 50  0001 C CNN
+F 3 "~" H 5925 3275 50  0001 C CNN
+	1    5925 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 62BB0F52
+P 6300 3275
+F 0 "R1" H 6450 3225 50  0000 R CNN
+F 1 "3.9K" H 6550 3350 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6230 3275 50  0001 C CNN
+F 3 "~" H 6300 3275 50  0001 C CNN
+	1    6300 3275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5925 3425 5925 3725
+Wire Wire Line
+	6300 3425 6300 3625
+$Comp
+L power:+5V #PWR01
+U 1 1 62BB8922
+P 6300 3125
+F 0 "#PWR01" H 6300 2975 50  0001 C CNN
+F 1 "+5V" H 6315 3298 50  0000 C CNN
+F 2 "" H 6300 3125 50  0001 C CNN
+F 3 "" H 6300 3125 50  0001 C CNN
+	1    6300 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 62BB8EBA
+P 5925 3125
+F 0 "#PWR02" H 5925 2975 50  0001 C CNN
+F 1 "+5V" H 5940 3298 50  0000 C CNN
+F 2 "" H 5925 3125 50  0001 C CNN
+F 3 "" H 5925 3125 50  0001 C CNN
+	1    5925 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2475 2000 2475 2175
+NoConn ~ 2175 2575
+NoConn ~ 3175 3875
+NoConn ~ 3175 3775
+NoConn ~ 3175 3675
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 62BD3671
+P 2575 4400
+F 0 "#FLG0101" H 2575 4475 50  0001 C CNN
+F 1 "PWR_FLAG" V 2575 4527 50  0000 L CNN
+F 2 "" H 2575 4400 50  0001 C CNN
+F 3 "~" H 2575 4400 50  0001 C CNN
+	1    2575 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2575 4500 2575 4400
+Connection ~ 2575 4400
+Wire Wire Line
+	2575 4400 2575 4250
+Wire Wire Line
+	3175 2875 3650 2875
+Text Label 3275 2875 0    50   ~ 0
+RFID_TXO
+Wire Wire Line
+	6325 2450 6775 2450
+Connection ~ 5925 3725
+Wire Wire Line
+	5925 3725 6800 3725
+Connection ~ 6300 3625
+Wire Wire Line
+	6300 3625 5750 3625
+$EndSCHEMATC
