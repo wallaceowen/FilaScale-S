@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Schematic cruft
+*bak
+*~
