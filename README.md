@@ -13,4 +13,6 @@ It was built to the requirements of a filament monitoring device.  The board pro
 ## The board (KiCAD rendering)
 ![The board](/FilaScale-s.png)
 
+## The code
+The Code is at https://github.com/wallaceowen/FilaScale/tree/nogui_nano
 
