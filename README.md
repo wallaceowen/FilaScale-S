@@ -11,7 +11,7 @@ It was built to the requirements of a filament monitoring device.  The board pro
 * Serial communications with a host over USB
 
 ## The board (KiCAD rendering)
-![The board](/FilaScale-s.png)
+![The board](/FilaScale-s.jpg)
 
 ## The code
 The Code is at https://github.com/wallaceowen/FilaScale/tree/nogui_nano
