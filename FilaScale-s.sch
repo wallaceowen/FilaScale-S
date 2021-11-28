@@ -19,7 +19,7 @@ U 1 1 62B57971
 P 5475 2750
 F 0 "J1" H 5703 2571 50  0000 L CNN
 F 1 "HX711MOD" H 5703 2480 50  0000 L CNN
-F 2 "HX711MOD_F" H 5703 2434 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5703 2434 50  0001 L CNN
 F 3 "" H 5625 2700 50  0001 C CNN
 	1    5475 2750
 	1    0    0    -1  
@@ -146,12 +146,12 @@ Wire Wire Line
 Wire Wire Line
 	3900 3275 4275 3275
 Wire Wire Line
-	2900 3875 2675 3875
+	2900 3875 2525 3875
 Wire Wire Line
-	2900 3775 2675 3775
-Text Label 2700 3875 0    50   ~ 0
+	2900 3775 2525 3775
+Text Label 2575 3875 0    50   ~ 0
 SCL
-Text Label 2700 3775 0    50   ~ 0
+Text Label 2575 3775 0    50   ~ 0
 SDA
 $Comp
 L power:+5V #PWR01
@@ -182,7 +182,7 @@ Wire Wire Line
 Connection ~ 3300 4450
 Wire Wire Line
 	3300 4450 3300 4375
-Text Label 3925 3275 0    50   ~ 0
+Text Label 3975 3275 0    50   ~ 0
 PD_SCK
 Text Label 4850 2950 0    50   ~ 0
 PD_SCK
@@ -223,9 +223,7 @@ RFID_RXI
 NoConn ~ 3300 2375
 NoConn ~ 3500 2375
 NoConn ~ 2900 2875
-NoConn ~ 2900 3175
 NoConn ~ 2900 3675
-NoConn ~ 2900 3975
 NoConn ~ 2900 4075
 Text Label 3925 3175 0    50   ~ 0
 PD_DOUT
@@ -281,8 +279,6 @@ F 3 "" H 4950 3725 50  0001 C CNN
 	1    4950 3725
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3200 2200 3200 2375
 NoConn ~ 2900 2775
 NoConn ~ 3900 4075
 NoConn ~ 3900 3975
@@ -304,8 +300,8 @@ Connection ~ 3300 4600
 Wire Wire Line
 	3300 4600 3300 4450
 Wire Wire Line
-	3900 3075 4275 3075
-Text Label 3925 3075 0    50   ~ 0
+	2525 3975 2900 3975
+Text Label 2550 3975 0    50   ~ 0
 RFID_TXO
 Wire Wire Line
 	4825 3050 5275 3050
@@ -332,7 +328,7 @@ U 1 1 6164D53D
 P 7650 3050
 F 0 "J3" H 7700 3467 50  0000 C CNN
 F 1 "EXP1" H 7700 3376 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 7650 3050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 7650 3050 50  0001 C CNN
 F 3 "~" H 7650 3050 50  0001 C CNN
 	1    7650 3050
 	1    0    0    -1  
@@ -347,7 +343,7 @@ Wire Wire Line
 	7275 3150 7450 3150
 Wire Wire Line
 	7275 3250 7450 3250
-Text Label 7325 3050 0    50   ~ 0
+Text Label 7325 3250 0    50   ~ 0
 A0
 Text Label 7325 3150 0    50   ~ 0
 A1
@@ -355,35 +351,28 @@ Text Label 7325 2850 0    50   ~ 0
 D6
 Text Label 7325 2950 0    50   ~ 0
 D7
-Text Label 7325 3250 0    50   ~ 0
+Text Label 7325 3050 0    50   ~ 0
 A2
-Wire Wire Line
-	8125 3325 8125 3250
 Wire Wire Line
 	8125 2850 7950 2850
 Wire Wire Line
-	8125 2950 7950 2950
+	8350 2950 7950 2950
 Wire Wire Line
-	8125 3050 7950 3050
-Connection ~ 8125 3050
+	8350 3050 7950 3050
+Connection ~ 8350 3050
 Wire Wire Line
-	8125 3050 8125 2950
+	8350 3050 8350 2950
 Wire Wire Line
-	8125 3150 7950 3150
-Connection ~ 8125 3150
+	8350 3150 7950 3150
+Connection ~ 8350 3150
 Wire Wire Line
-	8125 3150 8125 3050
+	8350 3150 8350 3050
 Wire Wire Line
-	8125 3250 7950 3250
-Connection ~ 8125 3250
+	2525 3375 2900 3375
 Wire Wire Line
-	8125 3250 8125 3150
+	2525 3475 2900 3475
 Wire Wire Line
-	2700 3375 2900 3375
-Wire Wire Line
-	2700 3475 2900 3475
-Wire Wire Line
-	2700 3575 2900 3575
+	2525 3575 2900 3575
 Wire Wire Line
 	4275 3375 3900 3375
 Wire Wire Line
@@ -429,12 +418,12 @@ SDA
 $Comp
 L power:GND #PWR07
 U 1 1 61690B1E
-P 8125 3325
-F 0 "#PWR07" H 8125 3075 50  0001 C CNN
-F 1 "GND" H 8130 3152 50  0000 C CNN
-F 2 "" H 8125 3325 50  0001 C CNN
-F 3 "" H 8125 3325 50  0001 C CNN
-	1    8125 3325
+P 8350 3325
+F 0 "#PWR07" H 8350 3075 50  0001 C CNN
+F 1 "GND" H 8355 3152 50  0000 C CNN
+F 2 "" H 8350 3325 50  0001 C CNN
+F 3 "" H 8350 3325 50  0001 C CNN
+	1    8350 3325
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -499,15 +488,117 @@ F 3 "" H 8125 2675 50  0001 C CNN
 	1    8125 2675
 	1    0    0    -1  
 $EndComp
-Text Label 2775 3375 0    50   ~ 0
+Text Label 2575 3375 0    50   ~ 0
 A0
-Text Label 2775 3475 0    50   ~ 0
+Text Label 2575 3475 0    50   ~ 0
 A1
-Text Label 2775 3575 0    50   ~ 0
+Text Label 2575 3575 0    50   ~ 0
 A2
-Text Label 3950 3375 0    50   ~ 0
+Text Label 4150 3375 0    50   ~ 0
 D6
-Text Label 3950 3475 0    50   ~ 0
+Text Label 4150 3475 0    50   ~ 0
 D7
 NoConn ~ 3900 3575
+Wire Wire Line
+	3200 2200 3200 2375
+$Comp
+L Device:C C2
+U 1 1 61A016A1
+P 4325 5525
+F 0 "C2" H 4440 5571 50  0000 L CNN
+F 1 ".1uF" H 4440 5480 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4363 5375 50  0001 C CNN
+F 3 "~" H 4325 5525 50  0001 C CNN
+	1    4325 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 61A01E06
+P 3875 5525
+F 0 "C1" H 3993 5571 50  0000 L CNN
+F 1 "10uF" H 3993 5480 50  0000 L CNN
+F 2 "Capacitor_SMD:C_2225_5664Metric_Pad1.80x6.60mm_HandSolder" H 3913 5375 50  0001 C CNN
+F 3 "~" H 3875 5525 50  0001 C CNN
+	1    3875 5525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3875 5375 4100 5375
+Wire Wire Line
+	3875 5675 4100 5675
+Wire Wire Line
+	4100 5675 4100 5775
+Connection ~ 4100 5675
+Wire Wire Line
+	4100 5675 4325 5675
+Wire Wire Line
+	4100 5375 4100 5300
+Connection ~ 4100 5375
+Wire Wire Line
+	4100 5375 4325 5375
+$Comp
+L power:GND #PWR018
+U 1 1 61A0A1B5
+P 4100 5775
+F 0 "#PWR018" H 4100 5525 50  0001 C CNN
+F 1 "GND" H 4105 5602 50  0000 C CNN
+F 2 "" H 4100 5775 50  0001 C CNN
+F 3 "" H 4100 5775 50  0001 C CNN
+	1    4100 5775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR017
+U 1 1 61A0A968
+P 4100 5300
+F 0 "#PWR017" H 4100 5150 50  0001 C CNN
+F 1 "+5V" H 4115 5473 50  0000 C CNN
+F 2 "" H 4100 5300 50  0001 C CNN
+F 3 "" H 4100 5300 50  0001 C CNN
+	1    4100 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4275 3075 3900 3075
+Text Label 4150 3075 0    50   ~ 0
+D3
+Wire Wire Line
+	8350 3150 8350 3325
+Wire Wire Line
+	8275 3250 7950 3250
+Text Label 8125 3250 0    50   ~ 0
+D3
+Wire Wire Line
+	2525 3175 2900 3175
+$Comp
+L Device:C C3
+U 1 1 61A3B426
+P 5975 5550
+F 0 "C3" H 6090 5596 50  0000 L CNN
+F 1 ".1uF" H 6090 5505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6013 5400 50  0001 C CNN
+F 3 "~" H 5975 5550 50  0001 C CNN
+	1    5975 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 61A3C3FA
+P 5975 5700
+F 0 "#PWR019" H 5975 5450 50  0001 C CNN
+F 1 "GND" H 5980 5527 50  0000 C CNN
+F 2 "" H 5975 5700 50  0001 C CNN
+F 3 "" H 5975 5700 50  0001 C CNN
+	1    5975 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 5300 5975 5300
+Wire Wire Line
+	5975 5300 5975 5400
+Text Label 2600 3175 0    50   ~ 0
+AREF
+Text Label 5625 5300 0    50   ~ 0
+AREF
 $EndSCHEMATC
